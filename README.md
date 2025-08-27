@@ -11,6 +11,7 @@ O material ficará disponibilizado aqui neste repositório.
 Caso queira contribuir, há diversas maneiras:
 - Participe dos nossos encontros, solicite a participação por meio do [nathan.gurgel@ieee.org](mailto:nathan.gurgel@ieee.org);
 - Contribua com mais material para este repositório;
+- Contribua com o [OpenPDK Brasil](https://openpdk-brasil.com.br);
 - Se você for alguém experiente em programação, contribua com o ecossistema das ferramentas Open-Source, abaixo a lista do ecossistema:
     - [KLayout](https://github.com/KLayout/klayout)
     - [Magic](https://github.com/RTimothyEdwards/magic)
