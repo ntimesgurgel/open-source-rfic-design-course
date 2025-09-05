@@ -1,0 +1,4 @@
+*.spice
+*.raw
+simulations/
+simulation/*
