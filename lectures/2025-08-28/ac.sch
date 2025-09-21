@@ -43,13 +43,8 @@ N -110 20 -70 20 {lab=Vin}
 N -30 -50 -30 -10 {lab=Vout}
 N -30 -50 70 -50 {lab=Vout}
 N -30 -80 -30 -50 {lab=Vout}
-N -30 -160 -30 -140 {lab=VCC}
 N -30 80 -30 170 {lab=GND}
-N -30 -180 -30 -160 {lab=VCC}
-N -100 -110 -70 -110 {lab=GND}
-N -30 -110 30 -110 {lab=VCC}
-N 30 -160 30 -110 {lab=VCC}
-N -30 -160 30 -160 {lab=VCC}
+N -30 -180 -30 -140 {lab=VCC}
 N -30 20 30 20 {lab=GND}
 N 30 20 30 80 {lab=GND}
 N -30 80 30 80 {lab=GND}
@@ -72,14 +67,6 @@ m=1
 model=sg13_hv_nmos
 spiceprefix=X
 }
-C {sg13g2_pr/sg13_hv_pmos.sym} -50 -110 0 0 {name=M1
-l=0.4u
-w=0.3u
-ng=1
-m=1
-model=sg13_hv_pmos
-spiceprefix=X
-}
 C {lab_pin.sym} -110 20 0 0 {name=p2 sig_type=std_logic lab=Vin}
 C {devices/code_shown.sym} -830 -90 0 0 {name=NGSPICE only_toplevel=true 
 value="
@@ -94,4 +81,8 @@ write ac.raw
 .endc
 "}
 C {devices/vsource.sym} -350 90 0 0 {name=vgs value="dc 1.4 ac 0.01 "}
-C {lab_pin.sym} -100 -110 0 0 {name=p10 sig_type=std_logic lab=GND}
+C {res.sym} -30 -110 0 0 {name=R1
+value=1k
+footprint=1206
+device=resistor
+m=1}
